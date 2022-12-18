@@ -57,12 +57,6 @@
 
 
 
-
-
-
-
-
-
 /* CSS om de vragenlijst op te maken */
 .questionnaire {
     display: flex;
@@ -83,6 +77,14 @@
 
 .question h2 {
     margin-bottom: 10px;
+}
+
+#title6,
+#title5 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+
 }
 
 .question textarea {
