@@ -4,20 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI Events</title>
+    <title>Interactive website vragenlijst </title>
     <link rel="stylesheet" href="styles/style.css" />
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
     <!-- HTML voor de navigatiebalk -->
     <nav class="navbar">
-      <a href="images/logo-oba.png" class="logo"></a>
+      <img
+      src="images/logo-oba.png"
+      alt="logo"
+      class="logo-img"
+    />
+
+
+
+
+
       <ul class="menu">
         <li><a href="#">menu</a></li>
 
         <li><a href="#">uitloggen</a></li>
       </ul>
     </nav>
+
+    <div id="“logo”">
+     
+    </div>
+
+
+
+
+
 
     <!-- HTML voor de vragenlijst -->
     <div class="questionnaire">
@@ -42,32 +60,40 @@
 
         <!-- Vraag 1  dropdown-->
         <div class="question">
-          <h2>Wat is je leeftijd?</h2>
-          <label for="age">Leeftijd:</label>
-          <input type="range" min="0" max="100" value="20" class="age-slider" id="age">
+          <fieldset>
+          <legend id="title2" class="desc">Wat is je leeftijd?</legend>
           
+        </fieldset>
+
+        <div class="buttons">
             <button type="button" id="previous">Terug</button>
             <button type="button" id="next">Volgende</button>
+          </div>
           </div>
         
         <!-- Vraag 2 input text-->
         <div class="question">
-          <h2>Wat zijn jouw favoriete genres?</h2>
+          <fieldset>
+          <legend id="title3" class="desc">Wat zijn jouw favoriete genres?</legend>
           <textarea name="question1"></textarea>
           <div class="buttons">
             <button type="button" id="previous">Terug</button>
             <button type="button" id="next">Volgende</button>
           </div>
+        </fieldset>
         </div>
         <!-- Vraag 3 imput text -->
+        
         <div class="question">
-          <h2>Wil je boeken in een bepaald taal lezen?</h2>
+          <fieldset>
+          <legend id="title4" class="desc">Wil je boeken in een bepaald taal lezen?</legend>
           <textarea name="question1"></textarea>
           <div class="buttons">
             <button type="button" id="previous">Terug</button>
             <button type="button" id="next">Volgende</button>
           </div>
         </div>
+      </fieldset>
         <!-- Vraag 4 radio buttons -->
         <div class="question">
          
@@ -111,24 +137,20 @@
             </legend>
             <div>
             <div>
-              <input id="Field6" name="Field6" type="checkbox" value="First Choice" tabindex="8">
-              <label class="choice" for="Field6">First Choice</label>
+              <input id="Field6" name="Field6" type="checkbox" value="Oba Oosterdok" tabindex="8">
+              <label class="choice" for="Field6">Oba Oosterdok</label>
             </div>
             <div>
-              <input id="Field7" name="Field7" type="checkbox" value="Second Choice" tabindex="9">
-              <label class="choice" for="Field7">Second Choice</label>
+              <input id="Field7" name="Field7" type="checkbox" value="Oba Javaplein" tabindex="9">
+              <label class="choice" for="Field7">Oba Javaplein</label>
             </div>
             <div>
-              <input id="Field8" name="Field8" type="checkbox" value="Third Choice" tabindex="10">
-              <label class="choice" for="Field8">Third Choice</label>
+              <input id="Field8" name="Field8" type="checkbox" value="Oba Linnaeus" tabindex="10">
+              <label class="choice" for="Field8">Oba Linnaeus</label>
             </span>
             </div>
           
-      
-
-
-
-
+    
       </fieldset>
 
           <div class="buttons">
@@ -141,8 +163,10 @@
 
 <!-- email en naam en submit-->
 <div class="question">
+  <fieldset>
+    <legend id="title7" class="desc">Einde vragenlijst</legend>
   <div>
-    <label class="desc" id="title1" for="Field1">Full Name</label>
+    <label class="desc" id="title1" for="Field1">Name</label>
     <div>
       <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
     </div>
@@ -159,18 +183,14 @@
     
   <div>
     <label class="desc" id="title4" for="Field4">
-      Message
+      Opmerking
     </label>
   
     <div>
       <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
     </div>
   
-
-
-
-
-
+  </fieldset>
 
 
     <div class="buttons">
@@ -185,12 +205,16 @@
 
  <!-- aanbevelingen resultaat -->
  <div class="question">
-  <h2>Eerste aanbevelingen</h2>
+   <fieldset>
+  <legend id="title7" class="desc">Resultaat eerste aanbevelingen</legend>
   <textarea name="question1"></textarea>
+
+</fieldset>
+
   <div class="buttons">
-    
     <button type="button" id="next">reserveer</button>
   </div>
+
 </div>
 
 
