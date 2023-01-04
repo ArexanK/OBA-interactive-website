@@ -12,12 +12,6 @@ menuLinks.forEach((link) => {
 
 
 
-
-
-
-
-
-
 const questions = document.querySelectorAll('.questions > *');
 const previousButton = document.querySelector('#previous');
 const nextButton = document.querySelector('#next');
