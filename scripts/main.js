@@ -11,31 +11,10 @@ menuLinks.forEach((link) => {
 
 
 
-
-const questions = document.querySelectorAll('.questions > *');
-const previousButton = document.querySelector('#previous');
-const nextButton = document.querySelector('#next');
-
-let currentQuestion = 0;
-
-function showQuestion(index) {
-    questions.forEach((question, i) => {
-        if (i === index) {
-            question.style.display = 'block';
-        } else {
-            question.style.display = 'none';
-        }
-    });
+//leeftijd dropdown 0-100 loop
+for (var i = 0; i <= 100; i++) {
+    var option = document.createElement("option");
+    option.text = i;
+    option.value = i;
+    ageSelect.add(option);
 }
-
-previousButton.addEventListener('click', () => {
-    currentQuestion--;
-    showQuestion(currentQuestion);
-});
-
-nextButton.addEventListener('click', () => {
-    currentQuestion++;
-    showQuestion(currentQuestion);
-});
-
-showQuestion(currentQuestion);

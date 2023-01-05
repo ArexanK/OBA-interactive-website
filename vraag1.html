@@ -8,36 +8,34 @@
     <link rel="stylesheet" href="styles/style.css" />
     <script src="scripts/main.js" defer></script>
   </head>
+
   <body>
     <!-- HTML voor de navigatiebalk -->
     <nav class="navbar">
       <img src="images/logo-oba.png" alt="logo" class="logo-img" />
-
       <ul class="menu">
         <li><a href="#">mijn bibliotheek</a></li>
-
         <li><a href="#">uitloggen</a></li>
       </ul>
     </nav>
 
     <div id="“logo”"></div>
-
-    <!-- HTML voor de vragenlijst -->
+    <form>
+      <!-- Vraag 1  dropdown-->
     
-      <form>
+      <div class="question">
         
-        <!-- beginscherm start-->
-        <div class="question">
-         
-            <h1>Welkom</h1>
+          <h1>Wat is je leeftijd?</h1>
+          <label for="age">Age:</label>
+          <select id="age" name="age">
+          </select>
+        </fieldset>
 
-            <p>Vul in de vragenlijst in om de meest relevante boekentips te
-            krijgen!</p>
-         
-          <div class="buttons"></div>
-          <button type="button" id="next">Start</button>
+        <div class="buttons">
+          <button type="button" id="previous">Terug</button>
+          <button type="button" id="next">Volgende</button>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
   </body>
 </html>
