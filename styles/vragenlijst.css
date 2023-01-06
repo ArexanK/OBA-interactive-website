@@ -1,3 +1,47 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+@font-face {
+    font-family: 'avenir_lt_std95_black';
+    src: url('../assets/fonts/avenir/avenirltstd-black-webfont.woff2') format('woff2'),
+        url('../assets/fonts/avenir/avenirltstd-black-webfont.woff') format('woff');
+    font-weight: heavy;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std45_book';
+    src: url('../assets/fonts/avenir/avenirltstd-book-webfont.woff2') format('woff2'),
+        url('../assets/fonts/avenir/avenirltstd-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std55_roman';
+    src: url('../assets/fonts/avenir/avenirltstd-roman-webfont.woff2') format('woff2'),
+        url('../assets/fonts/avenir/avenirltstd-roman-webfont.woff') format('woff');
+    font-weight: light;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,12 +49,15 @@
 }
 
 
+
+
 body {
     margin: 2rem;
     padding: 0;
-    font-family: 'Arial, Helvetica, sans-serif';
+    font-family: avenir_lt_std95_black;
     font-size: 1.5rem;
-    font-weight: 900;
+
+
 }
 
 /*navabar*/
@@ -28,11 +75,13 @@ body {
 .nav-link {
     list-style: none;
     float: center;
-    margin-left: 40px;
+    margin-left: 60px;
+
     border-bottom: 2px solid rgb(66, 65, 65);
     width: 5rem;
     justify-content: space-between;
-
+    font-size: 1rem;
+    font-weight: 800;
 
     text-decoration: none;
 
@@ -45,6 +94,7 @@ body {
     position: relative;
     width: 100%;
     align-items: center;
+    margin: 0 auto;
 
 }
 
@@ -107,7 +157,40 @@ body {
 }
 
 
+.card-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 40px;
 
+}
+
+
+a {
+    color: rgb(71, 70, 70);
+    text-decoration: none;
+}
+
+
+
+
+
+.nav-links {
+
+
+
+    margin: 0 auto;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+
+
+
+}
+
+.nav-open {
+    height: 50vh;
+
+}
 
 
 
@@ -247,4 +330,92 @@ h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/*media queries*/
+
+
+/*media queries logo*/
+
+
+@media only screen and (max-width: 600px) {
+    .logo img {
+        width: 75%;
+        height: 75%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+    .logo img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    .logo img {
+        width: 25%;
+        height: 25%;
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .nav-toggle {
+        display: none;
+        height: auto;
+
+    }
+
+    .nav-header {
+
+        display: block;
+    }
+
+
+
+    .flex-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+
+
+    ul {
+        text-align: center;
+    }
+
+
+    .nav-link {
+        height: auto;
+        flex-direction: row;
+        border-bottom: none;
+        display: inline-block;
+    }
+
+
+    ul {
+        text-align: center;
+
+    }
+
+
+
+
+    .nav-links {
+        background: rgb (220, 220, 220);
+        padding: 8px 15px;
+        border-radius: 4px;
+        height: auto;
+        text-align: center;
+
+    }
 }
