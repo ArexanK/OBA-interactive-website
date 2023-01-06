@@ -22,18 +22,16 @@
     <div id="“logo”"></div>
     <form>
       <!-- Vraag 1  dropdown-->
-    
-      <div class="question">
-        
+      <div class="container-form">
+        <div class="question">
           <h1>Wat is je leeftijd?</h1>
-          <label for="age">Age:</label>
-          <select id="age" name="age">
-          </select>
-        </fieldset>
+          <label for="required">verplicht</label>
+          <input id="age" type="number" min="0" step="10" required />
 
-        <div class="buttons">
-          <button type="button" id="previous">Terug</button>
-          <button type="button" id="next">Volgende</button>
+          <div class="buttons">
+            <button type="button" id="previous">Terug</button>
+            <button type="button" id="next">Volgende</button>
+          </div>
         </div>
       </div>
     </form>
