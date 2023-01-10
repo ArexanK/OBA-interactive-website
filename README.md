@@ -3,7 +3,7 @@ Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uit
 De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 ## 📝 Opdracht
-Ontwerp en maak voor een opdrachtgever 
+Ontwerp en maak een interactieve website voor een opdrachtgever.
 
 
 Userstory 12: De OBA leden willen graag een persoonlijke boekentips krijgen zodat ze worden gestimuleerd om meer te lezen.
