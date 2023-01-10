@@ -26,7 +26,31 @@ Leden zullen op deze pagina een vragenlijst invullen om de eerste aanbevelingen 
 
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+*HTML:
+
+- Header
+- Main
+- Section
+- Form
+- Fieldset
+- Legend
+- Label class
+- Span
+
+
+* CSS:
+- Navbar
+- buttons
+- transitions
+- animations
+
+
+
+
+* JS:
+
+- AddEventListener
+- QuerySelectorAll
 
 
 
