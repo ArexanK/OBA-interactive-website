@@ -25,8 +25,8 @@ Leden zullen op deze pagina een vragenlijst invullen om de eerste aanbevelingen 
 
 
 
-## Kenmerken
-*HTML:
+## 📌Kenmerken
+* HTML:
 
 - Header
 - Main
