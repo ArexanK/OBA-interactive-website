@@ -318,7 +318,7 @@ section {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(150, 150, 150);
     border: none;
     font-size: 16px;
     font-weight: lighter;
