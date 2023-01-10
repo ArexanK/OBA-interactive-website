@@ -5,22 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive website vragenlijst </title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/vragenlijst.css" />
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
      <!-- HTML voor de navigatiebalk -->
-     <nav class="navbar">
-      <img src="images/logo-oba.png" alt="logo" class="logo-img" />
-      <ul class="menu">
-        <li><a href="#">mijn bibliotheek</a></li>
-        <li><a href="#">uitloggen</a></li>
-      </ul>
-    </nav>
+   
+     <div class="navbar">
+      <div class="container flex-nav">
+        <div class="nav-header">
+          <div class="logo">
+            <img src="images/oba_logo_kort_roodh.jpeg" alt="oba logo" />
+          </div>
 
-    <div id="“logo”"></div>
+          <p class="subtitle1">mijn bibliotheek</p>
+
+          <p class="subtitle2">welkom [naam lid]</p>
+          <div class="header-container">
+            <button class="nav-toggle" id="navToggle">
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-links" id="nav-links">
+              <ul>
+                <li class="nav-link"><a href="#">mijn gegevens</a></li>
+                <li class="nav-link">
+                  <a href="vragenlijst.html">vragenlijst</a>
+                </li>
+                <li class="nav-link"><a href="#">verlengen</a></li>
+                <li class="nav-link"><a href="#">leeromgeving</a></li>
+                <li class="nav-link">
+                  <a href="#">reserveren</a>
+                </li>
+                <li class="nav-link">
+                  <a href="#">studieruimte reserveren</a>
+                </li>
+                <li class="nav-link">
+                  <a href="#">e-boeken luisterboeken</a>
+                </li>
+                <li class="nav-link">
+                  <a href="login.html">uitloggen</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+   
     <form>
 <!-- email en naam en submit-->
+<div class="container-form">
 <div class="question">
   
       <h1>Einde vragenlijst</h1>
@@ -59,6 +94,7 @@
     </div>
   </div>
   </div>
+</div>
     </form>
 
   </body>
